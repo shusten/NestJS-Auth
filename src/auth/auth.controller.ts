@@ -12,6 +12,6 @@ export class AuthController {
         @Body('username') username: string,
         @Body('password') password: string,
     ): AuthResponseDto {
-        return this.authService.signIn(username, password);
+        return /* this.authService.signIn(username, password); */
     }
 }
